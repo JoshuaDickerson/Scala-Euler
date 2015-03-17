@@ -1,6 +1,8 @@
 /**
  * @author ddcjoshuad
  */
+
+// euler2
 object EvenFibonnaci {
   def main(args: Array[String]): Unit = {
     val res = fibb(0,1,List(0l)).filter(x => x % 2 ==0).reduce({(x,r) => x + r})
