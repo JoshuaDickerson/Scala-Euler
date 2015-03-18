@@ -12,11 +12,7 @@ object Euler10 {
 
   }
 
-  def isPrime(num: Long, primes: List[Long]): Boolean ={
-    primes.reverse.foreach(x => if(num % x == 0){return false})
-    return true
-  }
-
+  // Sieve of Eratosthenes
   def listPrimes(num: Long): Set[Long] ={
     var allNums = collection.mutable.Set() ++ (2l to num)
 //    val mutableMap = collection.mutable.Map() ++ allNums
