@@ -8,11 +8,7 @@ object Euler10 {
   def main(args: Array[String]): Unit = {
     //The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
     //Find the sum of all the primes below two million.
-//    var primes = List(2l, 3l)
-//    val pStream = Stream.from (3, 2) takeWhile {x => if(isPrime(x.toLong, primes)){primes = x.toLong :: primes; println(primes.size) }; x < 20000000}
-//    val i = pStream.toList
-//    println(i.sum + 1)
-    println(listPrimes(2000000l).sum + 1)
+    println(listPrimes(2000000l).sum)
 
   }
 
